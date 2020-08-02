@@ -1,0 +1,86 @@
+<view class="cu-list menu card-menu" style="margin-top:40rpx;">
+	<view class="grid col-3 text-center bg-white">
+		<!-- <view>
+			<navigator url="/pages/goodssc/goodssc" hover-class="none">
+				<image src="/images/c7.png"></image><text>致敬过去</text>
+			</navigator>
+		</view> -->
+		<view class="kegu">
+			<button open-type="contact" session-from="weapp" style="background:#fff;width:150rpx;">
+				<image src="/images/c2.png"></image>
+				<text>官方客服</text>
+			</button>
+		</view>
+		<!-- <view>
+			<navigator url="/pages/about/about" hover-class="none">
+				<image src="/images/c3.png"></image><text>关于我们</text>
+			</navigator>
+		</view> -->
+		<!-- <view>
+			<navigator url="/pages/address/address" hover-class="none">
+				<image src="/images/c4.png"></image><text>每日景色</text>
+			</navigator>
+		</view> -->
+		<view bindtap="apply_fx">
+			<image src="/images/c5.png"></image><text>生活日常</text>
+		</view>
+		<view bindtap="apply_gy">
+			<image src="/images/c6.png"></image><text>小程序访客</text>
+		</view>
+		<!-- <view>
+			<navigator url="/pages/m_bzj/m_bzj" hover-class="none">
+				<image src="/images/m6.png"></image><text>保证金</text>
+			</navigator>
+		</view> -->
+	</view>
+</view>
+<!-- 
+<view class="cu-list menu card-menu nopoint">
+	<view class="cu-item arrow">
+		<navigator class="content" url="/pages/" hover-class="none">
+			<text>管理工具</text>
+		</navigator>
+	</view>
+	<view class="grid col-4 text-center bg-white">
+		<view>
+			<navigator url="/pages/m_shop/m_shop" hover-class="none">
+				<image src="/images/m1.png"></image><text>店铺管理</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_goods/m_goods" hover-class="none">
+				<image src="/images/m2.png"></image><text>商品管理</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_kinds/m_kinds" hover-class="none">
+				<image src="/images/m3.png"></image><text>分类管理</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_order/m_order" hover-class="none">
+				<image src="/images/m4.png"></image><text>订单管理</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_zijin/m_zijin" hover-class="none">
+				<image src="/images/m5.png"></image><text>资金记录</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_bzj/m_bzj" hover-class="none">
+				<image src="/images/m6.png"></image><text>保证金</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/m_gys/m_gys" hover-class="none">
+				<image src="/images/m7.png"></image><text>供应商收藏</text>
+			</navigator>
+		</view>
+		<view>
+			<navigator url="/pages/code_shop/code_shop" hover-class="none">
+				<image src="/images/m8.png"></image><text>店铺二维码</text>
+			</navigator>
+		</view>
+	</view>
+</view> -->

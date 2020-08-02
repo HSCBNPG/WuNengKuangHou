@@ -1,0 +1,31 @@
+<!--my.wxml-->
+<view class="userinfobox flex align-center">
+	<view class="cu-avatar round lg margin-left" style="background-image:url({{userInfo.avatarUrl}});">
+		<!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image> -->
+		<view class="cu-tag badge cuIcon-female {{userInfo.gender==1?'bg-blue':'bg-pink'}}"></view>
+	</view>
+	<view class="userinfo">
+		<view class="username twoline">{{userInfo.nickName}}</view>
+		<!-- <view class="userid">ID：</view> -->
+	</view>
+</view>
+
+<view class="myorder bg-white container">
+	<view class="cu-list menu">
+		<navigator class="cu-item arrow" hover-class="none" url="../ourlife/ourlife">
+			<view class="content flex align-center">
+				<image src="/images/c1.png" class="png" mode="aspectFit"></image>
+				<text class="text-black">我们的生活</text>
+			</view>
+		</navigator>
+	</view>
+</view>
+
+
+<!-- 登录授权 -->
+<view class="phone" hidden="{{is_login}}">
+	<view class="iphone">
+		<image src="/images/t.jpg"></image>
+		<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+	</view>
+</view>

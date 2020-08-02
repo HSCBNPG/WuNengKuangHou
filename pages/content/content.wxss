@@ -1,0 +1,30 @@
+
+@import "../index/index.wxss";
+page{line-height:1.5;}
+.cu-title{margin-bottom:12rpx;}
+.cu-title text{font-size:32rpx;border-left:solid 6rpx #03CA83;padding-left:12rpx;line-height:1;font-weight:bold;}
+image{display:block;}
+.jianjie image{width:100%;margin:8rpx 0}
+.gushi .screen-swiper{min-height:486rpx;margin-top:8rpx;}
+.grid.col-3>view{width:32%;margin:0 1.3% 10rpx 0}
+.grid.col-2 view{width:48%;margin:0 2% 12rpx 0}
+.color{
+    color: #000066;
+}
+
+
+/*选择器*/
+.selector{ width: 100%; position: fixed; bottom: 0; left: 0; z-index: 999999}
+.selector .inner_box{ position: relative; z-index: 999999}
+.selector .header_box{ padding: 25rpx 0; overflow: hidden; box-sizing: border-box; background: #FBF9FE;}
+.selector .header_box .item{ float: left; font-size: 34rpx; color: #586C94; box-sizing: border-box;}
+.selector .header_box .l{ width: 25%; padding-left: 25rpx;}
+.selector .header_box .c{ width: 50%; text-align: center}
+.selector .header_box .r{ width: 25%; text-align: right; padding-right: 25rpx;}
+.selector .selected{ height: 90rpx;}
+.selector .picker_box{ width: 100%; height: 485rpx; background: #fff;}
+.selector .picker_box picker-view-column{ text-align: center;}
+.selector .picker_box picker-view-column view{ line-height: 90rpx;}
+.selector .layer{ width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 10; background:rgba(0,0,0,0.5); }
+
+

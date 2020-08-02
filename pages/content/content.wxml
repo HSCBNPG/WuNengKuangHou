@@ -1,0 +1,50 @@
+<view class="container padding jianjie">
+	<view class="cu-title"><text>{{issueData.title}}</text></view>
+	<view>
+		使用场景:
+		<view class="color">
+			{{issueData._desc}}
+		</view>
+		配合使用:
+		<view class="color">
+			{{issueData._use}}
+		</view>
+		效果:
+		<view>
+			<view class="cu-form-group" style="display:flex;justify-content:flex-start">
+				<view class="title" data-mold="city" bindtap="risePicker">地区信息</view>
+				<view class="picker" data-mold="city" bindtap="risePicker">
+					{{cityText}}
+				</view>
+			</view>
+		</view>
+        测试:
+        <view class="color" bindtap="navigator">
+            退出去在进来(点击)
+        </view>
+	</view>
+</view>
+
+<!-- 地址 -->
+<view hidden="{{isCity}}" class="selector">
+	<view class="inner_box">
+		<view class="header_box">
+			<view class="item l" data-act="cancel" data-mold="city" bindtap="ideChoice">取消</view>
+			<view class="item c">请选择</view>
+			<view class="item r" data-act="confirm" data-mold="city" bindtap="ideChoice">确定</view>
+		</view>
+
+		<picker-view class="picker_box" indicator-class="selected" value="{{cityValue}}" bindchange="cityChange">
+			<picker-view-column>
+				<view wx:for="{{provinces}}" wx:key='index'>{{item}}</view>
+			</picker-view-column>
+			<picker-view-column>
+				<view wx:for="{{citys}}" wx:key='index'>{{item}}</view>
+			</picker-view-column>
+			<picker-view-column>
+				<view wx:for="{{countys}}" wx:key='index'>{{item}}</view>
+			</picker-view-column>
+		</picker-view>
+	</view>
+	<view class="layer"></view>
+</view>

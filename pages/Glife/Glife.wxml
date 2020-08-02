@@ -1,0 +1,46 @@
+<block wx:for='{{LifeData}}' wx:key='index'>
+	<view class="cu-card case {{isCard?'no-card':''}}">
+		<view class="cu-item shadow">
+			<view class="image" bindtap="ViewImage" data-img='{{item.images}}'>
+				<image src="{{item.images}}" mode="widthFix"></image>
+				<view class="cu-tag bg-blue">史诗火爆</view>
+				<view class="cu-bar bg-shadeBottom">
+					<text class="text-cut">{{item.title}}</text>
+				</view>
+			</view>
+			<view class="cu-list menu-avatar">
+				<view class="cu-item">
+					<view class="cu-avatar round lg" style="background-image:url({{item.avatar}});"></view>
+					<view class="content flex-sub">
+						<view class="text-grey">{{item._uname}}</view>
+						<view class="text-gray text-sm flex justify-between">
+							n+{{index}}万年前
+							<view class="text-gray text-sm" bindtap="showModal" data-target="Modal">
+								<text class="cuIcon-attentionfill margin-lr-xs" ></text> {{index+1}}999+
+								<text class="cuIcon-appreciatefill margin-lr-xs"></text>{{index+1}}9999+
+								<text class="cuIcon-messagefill margin-lr-xs"></text> {{index+1}}9999+
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+</block>
+
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white justify-end">
+			<view class="content">把你宝贵的意见发送给我</view>
+			<view class="action" bindtap="hideModal">
+				<text class="cuIcon-close text-red"></text>
+			</view>
+		</view>
+		<textarea maxlength="-1" bindinput="textareaAInput" placeholder="输入你的建议"></textarea>
+		<view class="cu-form-group margin-top">
+			<button class="cu-btn bg-green shadow" bindtap="FromUp" style="width:20%;">提交</button>
+		</view>
+	</view>
+</view>

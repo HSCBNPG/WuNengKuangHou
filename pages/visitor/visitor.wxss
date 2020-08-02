@@ -1,0 +1,7 @@
+page{
+    background-color: #fff;
+}
+.usercss{
+    padding: 10rpx;
+    display: flex;
+}

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/content/content",
+    "pages/ourlife/ourlife",
+    "pages/visitor/visitor",
+    "pages/Glife/Glife"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#03CA83",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "学习",
+        "iconPath": "/images/tab1_on.png",
+        "selectedIconPath": "/images/tab1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的(指的是冯明治的)",
+        "iconPath": "/images/tab4_on.png",
+        "selectedIconPath": "/images/tab4.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

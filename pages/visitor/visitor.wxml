@@ -1,0 +1,22 @@
+<view class="listbox text-center" hidden="{{userData!=''}}">
+	<image class="empty" src="/images/t.jpg" mode="widthFix"></image>
+	<view>暂无内容~</view>
+</view>
+
+
+<view class="cu-list menu-avatar no-padding">
+	<view class="cu-item" wx:for="{{userData}}" wx:key='index' wx:for-index="sub">
+		<view class="cu-avatar round lg" style="background-image:url({{item.avatar}});" >
+			<view class="cu-tag badge cuIcon-female {{item.sex==1?'bg-blue':'bg-pink'}}"></view>
+		</view>
+		<view class="content">
+			<view class="text-grey">{{item._uname}}
+				<text class="text-abc" wx:if='{{item.sex==1}}'>君</text>
+				<text class="text-abc" wx:else>姑娘</text>
+			</view>
+			<view class="text-gray text-sm">
+				{{item.city}}
+			</view>
+		</view>
+	</view>
+</view>
